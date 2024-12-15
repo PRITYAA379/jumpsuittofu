@@ -1,180 +1,223 @@
-/* General Body Styles */
+/* Importing Fonts (Modern, Bold, and Attention-Grabbing) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000; /* Hypnotizing black background */
-    color: #fff; /* Text color for better contrast */
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern and easy-to-read font */
+    background-color: #1d1d1d; /* Deep black background */
+    color: #ffffff; /* White text for readability */
     line-height: 1.6;
-}
-
-/* Header Section */
-header {
-    background: #222;
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ff4d94; /* Bright pink header */
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #ff69b4; /* Romantic pink for links */
+header nav ul li a {
+    color: #fff; /* White links in header */
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif; /* Modern font */
     text-transform: uppercase;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ff3366; /* Hover effect on links */
+header nav ul li a:hover {
+    color: #ff69b4; /* Hot pink on hover */
 }
 
-/* Hero Section */
 #hero {
-    background: linear-gradient(45deg, #ff3366, #ff6699); /* Romantic melting effect */
-    color: white;
     text-align: center;
-    padding: 50px 20px;
-    margin-bottom: 30px;
+    background: linear-gradient(45deg, #ff4d94, #ff66b2); /* Bright gradient */
+    color: white;
+    padding: 60px 0;
+    position: relative;
 }
 
 #hero h1 {
-    font-family: 'Lobster', sans-serif;
-    font-size: 36px;
-    color: #fff;
-}
-
-#hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif; /* Bold font for hero text */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 .cta {
-    margin-top: 30px;
+    text-align: center;
+    margin: 20px 0;
 }
 
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff7f50, #ff6347);
+.cta .cta-button,
+.cta .cta-button.secondary {
+    background-color: #ff66b2;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 30px;
-    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
     text-decoration: none;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.4s ease;
+    text-transform: uppercase;
+    margin: 5px;
+    transition: background 0.3s ease;
 }
 
-.cta-button:hover {
-    background: linear-gradient(45deg, #ff6347, #ff4500);
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+.cta .cta-button:hover,
+.cta .cta-button.secondary:hover {
+    background-color: #ff4d94; /* Hot pink on hover */
 }
 
-/* Benefits Section */
+.image-gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.image-gallery h2 {
+    font-size: 2em;
+    color: #ff66b2; /* Bright pink */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container a {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 #benefits {
-    background-color: #ff3366; /* Romantic pink background */
-    color: white;
-    padding: 30px 20px;
-    margin: 30px 0;
+    background-color: #fce8f1; /* Soft pastel pink background */
+    padding: 50px 20px;
 }
 
 #benefits h2 {
-    font-family: 'Lobster', sans-serif;
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #ff4d94;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 #benefits ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #benefits ul li {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #5a2a5f;
+    padding-left: 20px;
+    margin: 10px 0;
+    background: url('https://img.icons8.com/ios/50/000000/long-arrow-right.png') no-repeat left center;
+    background-size: 18px;
 }
 
-#benefits ul li strong {
-    font-weight: bold;
-}
-
-/* Offers Section */
 #offers {
-    background: linear-gradient(45deg, #ff6699, #ff3366); /* Melting romantic effect */
-    color: white;
-    padding: 30px 20px;
-    margin: 30px 0;
+    background: linear-gradient(45deg, #ff66b2, #ff4d94); /* Bright candy-like gradient */
+    padding: 50px 20px;
 }
 
 #offers h2 {
-    font-family: 'Lobster', sans-serif;
-    font-size: 28px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: white;
     margin-bottom: 20px;
-}
-
-#offers p {
-    font-size: 18px;
-    margin-bottom: 15px;
 }
 
 #offers ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    text-align: center;
 }
 
 #offers ul li {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: white;
+    margin: 15px 0;
 }
 
-/* Size Guide Section */
 #size-guide {
-    background-color: #222; /* Dark background for contrast */
-    color: white;
-    padding: 30px 20px;
+    background-color: #ffb3d9; /* Bright pink background */
+    padding: 50px 20px;
+    color: #5a2a5f;
 }
 
 #size-guide h2 {
-    font-family: 'Lobster', sans-serif;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4d94; /* Pink heading */
 }
 
 #size-guide table {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#size-guide th, #size-guide td {
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
+#size-guide th,
+#size-guide td {
+    padding: 15px;
+    border: 1px solid #ff4d94;
+    text-align: center;
 }
 
 #size-guide th {
-    background-color: #ff3366;
+    background-color: #ff66b2;
     color: white;
 }
 
-/* Footer Section */
+#size-guide td {
+    background-color: #ffe6f1;
+}
+
 footer {
-    background: #222;
-    color: #fff;
-    padding: 20px;
+    background-color: #2c2c2c;
+    color: white;
     text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
 }
 
 footer ul {
@@ -183,44 +226,16 @@ footer ul {
 }
 
 footer ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 footer ul li a {
-    color: #ff69b4;
+    color: #ff66b2;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 footer ul li a:hover {
-    color: #ff3366;
+    color: #ff4d94;
 }
-
-/* Responsive Image Styling */
-a img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    overflow: hidden;
-}
-
-/* Global Font Style Changes */
-h1, h2, p, li, strong {
-    font-family: 'Roboto', sans-serif; /* Clean, modern font */
-    color: #fff;
-}
-
-/* Custom Hover Effects */
-a:hover, .cta-button:hover {
-    text-decoration: underline;
-    color: #ff3366; /* Romantic pink on hover */
-}
-
